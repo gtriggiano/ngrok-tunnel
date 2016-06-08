@@ -1,0 +1,14 @@
+{
+  "name": "ngrok-tunnel",
+  "version": "1.0.0",
+  "description": "HTTP tunnel service based on https://ngrok.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ngrok": "2.1.9"
+  },
+  "author": "Giacomo Triggiano <giacomo@creativecoding.it>",
+  "license": "MIT"
+}
