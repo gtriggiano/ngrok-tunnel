@@ -1,4 +1,4 @@
-FROM 7.7.4-alpine
+FROM node:7.7.4-alpine
 
 LABEL maintainer "franzwagner.str@gmail.com"
 
