@@ -1,12 +1,12 @@
-FROM node:5
+FROM 7.7.4-alpine
 
-MAINTAINER Giacomo Triggiano <giacomo@creativecoding.it>
+LABEL maintainer "franzwagner.str@gmail.com"
 
-ADD package.json /package.json
+COPY package.json /package.json
 RUN npm install
 
-ADD .ngrok.yml /root/.ngrok2/ngrok.yml
-ADD index.js /index.js
+COPY .ngrok.yml /root/.ngrok2/ngrok.yml
+COPY index.js /index.js
 
 EXPOSE 4040
 
