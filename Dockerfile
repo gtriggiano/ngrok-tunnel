@@ -1,8 +1,9 @@
-FROM node:7.7.4-alpine
+FROM node:8-alpine
 
-LABEL maintainer "franzwagner.str@gmail.com"
+LABEL maintainer "Giacomo Triggiano <giacomo@creativecoding.it>"
 
 COPY package.json /package.json
+
 RUN npm install
 
 COPY .ngrok.yml /root/.ngrok2/ngrok.yml
@@ -10,4 +11,4 @@ COPY index.js /index.js
 
 EXPOSE 4040
 
-CMD npm start
+CMD ["npm", "start"]
