@@ -1,13 +1,14 @@
-FROM node:5
+FROM node:8-alpine
 
-MAINTAINER Giacomo Triggiano <giacomo@creativecoding.it>
+LABEL maintainer "Giacomo Triggiano <giacomo@creativecoding.it>"
 
-ADD package.json /package.json
+COPY package.json /package.json
+
 RUN npm install
 
-ADD .ngrok.yml /root/.ngrok2/ngrok.yml
-ADD index.js /index.js
+COPY .ngrok.yml /root/.ngrok2/ngrok.yml
+COPY index.js /index.js
 
 EXPOSE 4040
 
-CMD npm start
+CMD ["npm", "start"]
