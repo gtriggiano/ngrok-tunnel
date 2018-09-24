@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "ngrok": "2.2.23"
+    "ngrok": "^3.0.1"
   },
   "author": "Giacomo Triggiano <giacomo@creativecoding.it>",
   "license": "MIT"

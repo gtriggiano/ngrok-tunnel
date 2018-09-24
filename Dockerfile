@@ -3,11 +3,11 @@ FROM node:8-alpine
 LABEL maintainer "Giacomo Triggiano <giacomo@creativecoding.it>"
 
 COPY package.json /package.json
-
-RUN npm install
-
-COPY .ngrok.yml /root/.ngrok2/ngrok.yml
+COPY yarn.lock /yarn.lock
+COPY ngrok.yml /ngrok.yml
 COPY index.js /index.js
+
+RUN yarn
 
 EXPOSE 4040
 
