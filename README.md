@@ -14,6 +14,13 @@ $ docker pull gtriggiano/ngrok-tunnel
 $ docker run -it  -e "TARGET_HOST=servicetotunnel" -e "TARGET_PORT=5000" -p 4040 gtriggiano/ngrok-tunnel
 ```
 
+#### Custom ngrok configuration
+It is possible to use custom `ngrok.yml` config. Just need map a config file from local machine inside container
+
+```bash
+$ docker run -v /path/to/ngrok.yml:/ngrok.yml gtriggiano/ngrok-tunnel
+```
+
 ### Env vars (options)
 
 `TARGET_HOST`: mandatory
