@@ -28,8 +28,8 @@ The ngrok traffic inspection service and it's GUI are exposed on the port `4040`
 
 ### Why?
 
-When working on a project I often need to demo the functionality/design/whatever of the apps I'm working on, to some collegue.
+When working on a project I often need to demo the functionality/design/whatever of the apps I'm working on, to some colleague.
 
 I heavily use docker in my dev-to-production process to ensure the maximum portability of the software.
 
-With [ngrok-tunnel](https://hub.docker.com/r/gtriggiano/ngrok-tunnel) I can easily integrate an HTTP tunnel service in my docker-compose.yml(s), letting peoples connect via browser to my running-on-localhost apps from wherever they are!
+With [ngrok-tunnel](https://hub.docker.com/r/gtriggiano/ngrok-tunnel) I can easily integrate an HTTP tunnel service in my docker-compose.yml(s), letting people connect via their browser to my running-on-localhost apps from wherever they are!
